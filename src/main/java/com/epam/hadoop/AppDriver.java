@@ -55,7 +55,7 @@ public class AppDriver {
 			}
 		});
 	    values = values.subList(0, 100);
-	    Map <String, Long> actual  = new TreeMap<String, Long>();
+	    Map <String, Long> actual  = new TreeMap<String, Long>(Collections.reverseOrder());
 	    for(Entry<String, Long> entry: values) {
 	    	actual.put(entry.getKey(),entry.getValue());
 	    }
